@@ -1,6 +1,7 @@
 
 Commandos git:
 
+- add
 - pull
 - push
 - commit
