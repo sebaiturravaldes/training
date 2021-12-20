@@ -2,7 +2,7 @@
  * Enunciado: 
  * 
  * Definir en un arreglo la edad de tres familiares.
- * Luego obtener el que tenga la edad mínima y el que tenga la edad máxima, entre los tres familiares 
+ * Luego, obtener el que tenga la edad mínima y el que tenga la edad máxima, entre los tres familiares 
  */
 
 // Declaramos los datos iniciales
