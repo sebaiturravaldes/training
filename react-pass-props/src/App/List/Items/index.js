@@ -1,4 +1,4 @@
-export default function Item(props) {
+export default function Items(props) {
     const { listA, listB, setListA, setListB, moveItem} = props
 
     return <ul>

@@ -1,5 +1,5 @@
 import './App.css';
-import Tasks from './Tasks';
+import List from './List';
 import Example from './Example';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       Soy la app
       <Example name="Tanjiro" />
-      <Tasks />
+      <List />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useEffect } from "react/cjs/react.development";
-import Item from "./Item";
+import Items from "./Items";
 
-export default function Tasks(props) {
+export default function List(props) {
     const [backlog, setBacklog] = useState(['Trabajar', 'Estudiar', 'Descansar'])
     const [todo, setTodo] = useState([])
     const [ready, setReady] = useState([])
@@ -22,14 +22,14 @@ export default function Tasks(props) {
 
     return <div>
                 <h2>Backlog</h2>
-                    <Item   
+                    <Items   
                             listA={backlog} 
                             listB={todo} 
                             setListA={setBacklog} 
                             setListB={setTodo} 
                             moveItem={moveItem} />
                     <h2>Todo</h2>
-                    <Item   
+                    <Items   
                             listA={todo} 
                             listB={ready} 
                             setListA={setTodo} 
@@ -37,7 +37,7 @@ export default function Tasks(props) {
                             moveItem={moveItem} />
 
                     <h2>Ready</h2>
-                    <Item   
+                    <Items   
                             listA={ready} 
                             listB={backlog} 
                             setListA={setReady} 
