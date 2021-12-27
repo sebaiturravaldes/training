@@ -2,13 +2,13 @@ import { useState } from "react";
 import { useEffect } from "react/cjs/react.development";
 import Item from "./Item";
 
-export default function List(props) {
-    const [list, setList] = useState(['Trabajar', 'Estudiar', 'Descansar'])
-    const [todoList, setTodoList] = useState([])
+export default function Tasks(props) {
+    const [backlog, setBacklog] = useState(['Trabajar', 'Estudiar', 'Descansar'])
+    const [todo, setTodo] = useState([])
     const [ready, setReady] = useState([])
     
     useEffect(() => {
-        if(list.length === 0 && todoList.length === 0){
+        if(backlog.length === 0 && todo.length === 0){
                 alert(':)')
         }
     }, [ready])
@@ -23,25 +23,25 @@ export default function List(props) {
     return <div>
                 <h2>Backlog</h2>
                     <Item   
-                            listA={list} 
-                            listB={todoList} 
-                            setListA={setList} 
-                            setListB={setTodoList} 
+                            listA={backlog} 
+                            listB={todo} 
+                            setListA={setBacklog} 
+                            setListB={setTodo} 
                             moveItem={moveItem} />
                     <h2>Todo</h2>
                     <Item   
-                            listA={todoList} 
+                            listA={todo} 
                             listB={ready} 
-                            setListA={setTodoList} 
+                            setListA={setTodo} 
                             setListB={setReady} 
                             moveItem={moveItem} />
 
                     <h2>Ready</h2>
                     <Item   
                             listA={ready} 
-                            listB={list} 
+                            listB={backlog} 
                             setListA={setReady} 
-                            setListB={setList} 
+                            setListB={setBacklog} 
                             moveItem={moveItem} />
             </div>
 }
