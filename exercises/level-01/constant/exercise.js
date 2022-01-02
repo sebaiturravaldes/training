@@ -31,3 +31,16 @@
 
 // example)
 const ONE = 1
+
+const FOO 
+const two = 2
+const string = 'soy un string'
+const num = 0.9
+const result = 2/0
+const bool = true  
+const nothing = {} 
+const propiety = {
+    things= 'pala'
+}
+const result2 = two+num
+const object = 'casa'
